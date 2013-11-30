@@ -1,13 +1,59 @@
 ---
 layout: default
-title: harx's blog
+title: harx test
 ---
+<!DOCTYPE html>
+<html>
 
-<h2>{{ page.title }}</h2>
-<h4>{{post.title}}</h4>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Harx.github.com : " />
 
-<p>最新文章56</p>
-<ul>
-{% for post in site.posts %}
-<li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Harx.github.com</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Harx">View on GitHub</a>
+
+          <h1 id="project_title">Harx.github.com</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="harx" class="anchor" href="#harx"><span class="octicon octicon-link"></span></a><a href="/">harx</a>
+</h3>
+      </section>
+      <section class="inner">
+        <h2>{{ page.title }}</h2>
+    　　<p>最新文章13:36</p>
+    　　<ul>
+    　　　　{% for post in site.posts %}
+    　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+    　　　　{% endfor %}
+    　　</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
