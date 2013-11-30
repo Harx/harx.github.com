@@ -1,5 +1,6 @@
 ---
 layout: default
+title: harx's blog
 ---
 
 {% for post in site.posts %}
