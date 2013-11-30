@@ -2,10 +2,8 @@
 layout: default
 ---
 
-#Markdown语法
-2013-11-29 By Harx 整理自：[http://www.worldhello.net/gotgithub/appendix/markups.html#id50](http://www.worldhello.net/gotgithub/appendix/markups.html#id50)
-
-关于Github的[GFM(Github Flavored Markdown)](https://help.github.com/articles/github-flavored-markdown)，以后再整理。
+#Jekyll_Markdown兼容语法
+2013-11-29 By Harx
 
 标题
 -------
@@ -91,54 +89,6 @@ layout: default
 >```
 >code
 >```
-
-三个连续的上单引号或~（同一个键的两个符号）符号界定代码块。gfm
-
-显示为一行了。
-
-```ruby
-require 'redcarpet'
-md = Redcarpet.new("Hello, world.")
-puts md.to_html
-```
-
-    ```ruby
-    require 'redcarpet'
-    md = Redcarpet.new("Hello, world.")
-    puts md.to_html
-    ```
-
-列表（列表标记与条目间要有一个空格）
---------
-
-**无序列表**
-
-* 星号、减号、加号开始列表。
-  - 列表层级和缩进有关。
-    + 和具体符号无关。
-* 返回一级列表。
-
-**有序列表**
-
-1. 数字和点开始有序列表。
-   1. 注意子列表的缩进位置。
-      1. 三级列表。
-      1. 编号会自动更正。
-   1. 二级列表，编号自动更正为2。
-2. 返回一级列表。
-    
-**列表续行、段落和代码块**
-
-1. 列表项可以折行，
-   对齐则自动续行。
-2. 列表项可包含多个段落。
-
-    空行开始的新段落必须缩进四个空格，
-    段落才属于列表项。
-    
-3. 列表中的代码块要缩进8个空格。
-
-        $ printf "Hello, world.\n"  
 
 分割线
 --------
@@ -237,9 +187,3 @@ GitHub Logo: ![GitHub][logo]
     <div style="background:#bbb;">
       HTML块中不能混用 **标记语法**
     </div>
-    
-    
-    
-    
-    
-    
