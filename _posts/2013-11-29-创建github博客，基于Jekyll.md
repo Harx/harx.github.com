@@ -1,5 +1,5 @@
 ---
-layout： default
+layout: default
 title: 创建github博客，基于Jekyll
 ---
 
