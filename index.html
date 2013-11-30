@@ -1,29 +1,19 @@
 ---
 layout: default
-title: harx test
+title: harx的技术日记
 ---
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Harx">View on GitHub</a>
 
-          <h1 id="project_title">Harx.github.com</h1>
-          <h2 id="project_tagline"></h2>
+{% for post in site.posts %}
+	<div class="jumbotron">
+		<h3><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>  <small>{{post.date|date_to_string}}</small></h3>
+		{{post.content}}
+	</div>	
+{% endfor %}
 
-        </header>
-    </div>
-
-        <h2>{{ page.title }}</h2>
-    　　<p>最新文章13:58</p>
-    　　<ul>
-    　　　　{% for post in site.posts %}
-    　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
-    　　　　{% endfor %}
-    　　</ul>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+	<footer class="inner">
+		<p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+		<a id="forkme_banner" href="https://github.com/Harx">View on GitHub</a>
+	</footer>
+</div>
