@@ -1,6 +1,5 @@
 ---
 layout: default
-title: harx
 ---
 
 {% for post in site.posts %}
