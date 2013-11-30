@@ -1,6 +1,6 @@
 ---
 layout: default
-title: harx的技术日记
+title: harx
 ---
 
 {% for post in site.posts %}
