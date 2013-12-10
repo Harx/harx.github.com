@@ -4,10 +4,15 @@ title: bootstrap小笔记
 ---
 
 .container 居中
+
 .navbar
+
 .page-header
+
 .blockquot
+
 .text-right/left/center
+
 
 
 
