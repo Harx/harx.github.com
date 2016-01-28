@@ -1,7 +1,15 @@
-<html>
-<head>
-</head>
-<body>
-<h1>hi</h1>
-</body>
-</html>
+---
+layout: default
+title: Harx的技术日记
+---
+
+{% for post in site.posts %}
+<h4><a href="{{ post.url }}">{{ post.title }}</a>
+    <small>{{post.date|date_to_string}}</small>
+</h4>
+{% endfor %}
+
+
+<footer>
+    {{site.time}}
+</footer>
